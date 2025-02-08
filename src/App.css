@@ -1,42 +1,71 @@
-#root {
+/* #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
-}
+} */
 
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
-  }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
+/* .read-the-docs {
   color: #888;
+} */
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1em;
+  z-index: 5;
+  background-color: #00afef;
+  padding: 1em 0;
+}
+
+.logo-navbar {
+  width: auto;
+  height: 2.5em;
+}
+
+aside {
+  background-color: blanchedalmond;
+  position: sticky;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  top: 0;
+  z-index: 4;
+  width: 12%;
+  height: 85vh;
+  padding-top: 5em;
+}
+
+aside ul {
+  margin: 0;
+}
+
+/* .Navbar li,
+.Navbar a {
+  list-style: none;
+  text-decoration: none;
+  display: inline-block;
+  margin: 0px 20px;
+  font-size: 1.2rem;
+  color: white;
+} */
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  z-index: 6;
+  width: 100%;
+  background-color: #0b1a4d;
+  padding: 0.5em 1em;
+}
+
+.footer a {
+  text-decoration: none;
+  color: azure;
 }
